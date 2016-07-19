@@ -1,0 +1,62 @@
+{
+    "style_id": 0,
+    "types": [
+        {
+            "type_name": "type_content",
+            "attributes": [
+                {
+                    "attributeType": "font_color",
+                    "attributeValue": "#5D6363"
+                }
+            ]
+        },
+        {
+            "type_name": "type_title",
+            "attributes": [
+                {
+                    "attributeType": "font_color",
+                    "attributeValue": "#000000"
+                }
+            ]
+        },
+        {
+            "type_name": "type_listview",
+            "attributes": [
+                {
+                    "attributeType": "background_color",
+                    "attributeValue": "#FFFFFF"
+                },
+                {
+                    "attributeType": "diver_color",
+                    "attributeValue": "#000000"
+                }
+            ]
+        },
+        {
+            "type_name": "type_layout",
+            "attributes": [
+                {
+                    "attributeType": "background_color",
+                    "attributeValue": "#FFFFFF"
+                }
+            ]
+        },
+        {
+            "type_name": "type_webview",
+            "attributes": [
+                {
+                    "attributeType": "background_color",
+                    "attributeValue": "#FFFFFF"
+                },
+                {
+                    "attributeType": "url_color",
+                    "attributeValue": "#FF0000"
+                },
+                {
+                    "attributeType": "font_color",
+                    "attributeValue": "#000000"
+                }
+            ]
+        }
+    ]
+}

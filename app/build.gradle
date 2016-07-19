@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.zgh.mvpdemo"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:24.0.0-alpha2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //下拉刷新控件需要
+    // -------------------- 以下三个库是必须依赖的 ----------------------------
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.5@aar'
+    // -------------------- 以上三个库是必须依赖的 ----------------------------
+    // banner控件 详情：https://github.com/saiwu-bigkoo/Android-ConvenientBanner
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile project(':stylelib')
+
+    debugCompile 'me.drakeet.library:crashwoodpecker:0.9.83'
+    releaseCompile 'me.drakeet.library:crashwoodpecker-do-nothing:0.9.83'
+
+}

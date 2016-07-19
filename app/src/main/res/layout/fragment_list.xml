@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_listview_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:tag="@string/type_listview"
+        android:divider="#000000"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:id="@+id/listview"
+        style="@style/MatchAuto"
+        android:overScrollMode="never"
+        android:padding="5dp"
+        android:scrollbars="none" />
+</cn.bingoogolapple.refreshlayout.BGARefreshLayout>

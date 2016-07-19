@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:tag="@string/type_title"
+        android:textColor="#000000"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国南海清场？美国到时候这么做"
+        android:textSize="18sp" />
+    <TextView
+        android:textColor="#5D6363"
+        android:tag="@string/type_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="中国要出手了？美国能帮菲律宾的不多了。海牙仲裁庭连遭打脸。"
+        android:layout_below="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

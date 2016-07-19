@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:tag="@string/type_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:tag="@string/type_title"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中央财政支持地方具体金额披露：这个省最多(表)"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:tag="@string/type_content"
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="10dp"
+            android:text="@string/news_content"
+            android:textColor="#5D6363"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="模式切换" />
+    </RelativeLayout>
+</ScrollView>
