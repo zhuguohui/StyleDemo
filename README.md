@@ -1,4 +1,17 @@
-# MVPDemo
-使用MVP搭建项目框架
+# StyleDemo
+一种换肤框架
+##效果
 
-关于实现请看[我的博客](http://blog.csdn.net/qq_22706515/article/details/51819472)
+![效果图](https://github.com/zhuguohui/StyleDemo/blob/master/gif/1.gif)
+
+##功能
+
+1.支持配置文件
+
+2.通过遍历实现换肤
+
+3.实现webview的夜间模式
+
+4.配置简单方便
+
+关于具体的实现我会再写一遍博客的。
