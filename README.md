@@ -2,7 +2,7 @@
 一种换肤框架
 ##效果
 
-![效果图](https://github.com/zhuguohui/StyleDemo/blob/master/gif/1.gif)
+![效果图](https://github.com/zhuguohui/StyleDemo/blob/master/gif/show.gif)
 
 ##功能
 
