@@ -20,7 +20,7 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         CrashWoodpecker.init(this);
-        StyleHelper.init(this, "baidu", "day");
+        StyleHelper.init(this,"wangyi","baidu", "day");
         app = this;
         //设置多个页面共享加载和重试页面
         LoadingAndRetryManager.BASE_RETRY_LAYOUT_ID = R.layout.base_retry;

@@ -18,14 +18,19 @@ public class MainActivity extends BaseActivity {
     String[] titles = new String[]{"头条", "科技", "军事"};
 
 
-
     @Override
     public void childOnCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_main);
-        findViewById(R.id.btn_change).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_baidu).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                StyleHelper.changeMode();
+                StyleHelper.changeStyle(0,1);
+            }
+        });
+        findViewById(R.id.btn_wangyi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StyleHelper.changeStyle(0,2);
             }
         });
         viewPager = (ViewPager) findViewById(R.id.viewpager);

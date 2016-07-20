@@ -15,7 +15,6 @@
         android:textSize="18sp" />
     <TextView
         android:textColor="#5D6363"
-        android:tag="@string/type_content"
         android:layout_marginTop="5dp"
         android:textSize="16sp"
         android:text="中国要出手了？美国能帮菲律宾的不多了。海牙仲裁庭连遭打脸。"

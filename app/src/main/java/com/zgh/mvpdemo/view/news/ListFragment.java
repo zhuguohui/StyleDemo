@@ -130,6 +130,7 @@ public class ListFragment extends Fragment implements IListView, OnItemClickList
         mBannerView.setVisibility(View.GONE);
         LinearLayout bannerParent = new LinearLayout(getActivity());
         bannerParent.addView(mBannerView);
+        bannerParent.setTag("type_no");
         mListView.addHeaderView(bannerParent);
     }
 

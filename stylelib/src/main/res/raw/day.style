@@ -1,62 +1,53 @@
 {
-    "style_id": 0,
-    "types": [
+  //注意，标准的json文件是不支持注释的，此处的注释在解析之前会通过JSMin这个类进行过滤
+  //注意，type_no表示为不需要换肤，这个已经定义在StyleHelper中了。
+  "style_id": 0,
+  //标识此style为默认style
+  "default_style":"true",
+  "types": [
+    {
+      //默认的type
+      "type_name": "type_base",
+      //标记为默认样式
+      "default_type": "true",
+      "attributes": [
         {
-            "type_name": "type_content",
-            "attributes": [
-                {
-                    "attributeType": "font_color",
-                    "attributeValue": "#5D6363"
-                }
-            ]
+          //默认的字体颜色
+          "attributeType": "font_color",
+          "attributeValue": "#5D6363"
         },
         {
-            "type_name": "type_title",
-            "attributes": [
-                {
-                    "attributeType": "font_color",
-                    "attributeValue": "#000000"
-                }
-            ]
+          //默认的全局背景
+          "attributeType": "background_color",
+          "attributeValue": "#FFFFFF"
         },
         {
-            "type_name": "type_listview",
-            "attributes": [
-                {
-                    "attributeType": "background_color",
-                    "attributeValue": "#FFFFFF"
-                },
-                {
-                    "attributeType": "diver_color",
-                    "attributeValue": "#000000"
-                }
-            ]
+          //默认listView的分隔线颜色
+          "attributeType": "diver_color",
+          "attributeValue": "#000000"
         },
         {
-            "type_name": "type_layout",
-            "attributes": [
-                {
-                    "attributeType": "background_color",
-                    "attributeValue": "#FFFFFF"
-                }
-            ]
-        },
-        {
-            "type_name": "type_webview",
-            "attributes": [
-                {
-                    "attributeType": "background_color",
-                    "attributeValue": "#FFFFFF"
-                },
-                {
-                    "attributeType": "url_color",
-                    "attributeValue": "#FF0000"
-                },
-                {
-                    "attributeType": "font_color",
-                    "attributeValue": "#000000"
-                }
-            ]
+          //默认网页中的链接颜色
+          "attributeType": "url_color",
+          "attributeValue": "#FF0000"
         }
-    ]
+      ]
+    },
+    {
+      //可以通过subType:parentType的方式集成type,然后覆盖父类的属性
+      "type_name": "type_title:type_base",
+      "attributes": [
+        {
+          "attributeType": "font_color",
+          "attributeValue": "#000000"
+        }
+      ]
+    },
+    {
+      //不需要换肤
+      "type_name": "type_no",
+      "attributes": [
+      ]
+    }
+  ]
 }

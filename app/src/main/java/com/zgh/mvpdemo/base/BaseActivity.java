@@ -1,10 +1,7 @@
 package com.zgh.mvpdemo.base;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
 
 import com.zgh.stylelib.style.StyleHelper;
 
@@ -24,7 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public abstract   void childOnCreate(Bundle savedInstanceState);
 
     public void changeMode(){
-        StyleHelper.changeMode();
+        StyleHelper.changeStyle(0, 1);
     }
 
 

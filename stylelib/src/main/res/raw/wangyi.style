@@ -1,5 +1,5 @@
 {
-    "style_id": 1,
+    "style_id": 2,
     "default_style":"true",
     "types": [
         {
@@ -9,19 +9,19 @@
             "attributes": [
                 {
                     "attributeType": "font_color",
-                    "attributeValue": "#8E9EB5"
+                    "attributeValue": "#686868"
                 },
                 {
                     "attributeType": "background_color",
-                    "attributeValue": "#252F3B"
+                    "attributeValue": "#222222"
                 },
                 {
                     "attributeType": "diver_color",
-                    "attributeValue": "#0C1824"
+                    "attributeValue": "#383838"
                 },
                 {
                     "attributeType": "url_color",
-                    "attributeValue": "#2C4D7D"
+                    "attributeValue": "#24597E"
                 }
             ]
         },
@@ -30,7 +30,7 @@
             "attributes": [
                 {
                     "attributeType": "font_color",
-                    "attributeValue": "#2C4D7D"
+                    "attributeValue": "#999999"
                 }
             ]
         }
