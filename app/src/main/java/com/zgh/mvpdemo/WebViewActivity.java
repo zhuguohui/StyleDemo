@@ -53,7 +53,6 @@ public class WebViewActivity extends BaseActivity {
         });
         webview.setBackgroundColor(0);
         webview.loadUrl("http://wap.163.com/index.jsp");
-
     }
 
 
