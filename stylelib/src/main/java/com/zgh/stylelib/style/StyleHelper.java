@@ -33,6 +33,7 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,7 +51,7 @@ public class StyleHelper {
 
 
     private static int sCurrentStyleId = 0;
-    private static Stack<Activity> mActivityStack = new Stack<>();
+    private static Stack<WeakReference<Activity>> mActivityStack = new Stack<>();
     //默认的typeName
     private static String sDefalutTypeName = "";
     //标记是否设置了默认的type
@@ -90,7 +91,7 @@ public class StyleHelper {
     }
 
     public static void initActivity(Activity activity) {
-        mActivityStack.push(activity);
+        mActivityStack.push(new WeakReference<Activity>(activity));
         View view = activity.findViewById(android.R.id.content);
         setColor(view, true);
         setOnHierarchyChangeListener(view);
@@ -254,7 +255,6 @@ public class StyleHelper {
     }
 
     //样式切换逻辑
-
     public static void changeStyle(int... styleIDs) {
         if (styleIDs == null || styleIDs.length == 0) {
             return;
@@ -275,14 +275,16 @@ public class StyleHelper {
         boolean createAnimator = false;
 
         for (int i = mActivityStack.size() - 1; i >= 0; i--) {
-            Activity activity = mActivityStack.get(i);
-            View view = activity.findViewById(android.R.id.content);
-            Log.i("zzz", "activity=" + activity);
-            if (!createAnimator) {
-                createAnimator = true;
-                createAnimator(activity);
+            Activity activity = mActivityStack.get(i).get();
+            if(activity!=null) {
+                View view = activity.findViewById(android.R.id.content);
+                Log.i("zzz", "activity=" + activity);
+                if (!createAnimator) {
+                    createAnimator = true;
+                    createAnimator(activity);
+                }
+                setColor(view, true);
             }
-            setColor(view, true);
         }
     }
 
