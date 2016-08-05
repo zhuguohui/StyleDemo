@@ -1,4 +1,4 @@
-package com.zgh.mvpdemo;
+package com.zgh.mvpdemo.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -12,6 +12,7 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.zgh.mvpdemo.R;
 import com.zgh.mvpdemo.base.BaseActivity;
 import com.zgh.mvpdemo.view.news.StyleWebView;
 import com.zgh.stylelib.style.StyleHelper;

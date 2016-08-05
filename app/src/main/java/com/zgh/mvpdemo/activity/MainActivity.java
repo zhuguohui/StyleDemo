@@ -1,4 +1,4 @@
-package com.zgh.mvpdemo;
+package com.zgh.mvpdemo.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+import com.zgh.mvpdemo.R;
 import com.zgh.mvpdemo.base.BaseActivity;
 import com.zgh.mvpdemo.view.news.ListFragment;
 import com.zgh.stylelib.style.StyleHelper;

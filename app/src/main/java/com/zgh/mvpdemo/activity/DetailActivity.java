@@ -1,4 +1,4 @@
-package com.zgh.mvpdemo;
+package com.zgh.mvpdemo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

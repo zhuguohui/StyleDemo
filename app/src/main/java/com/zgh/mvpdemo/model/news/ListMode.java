@@ -17,14 +17,14 @@ import java.util.Random;
  * Created by yuelin on 2016/6/29.
  */
 public class ListMode implements IListMode {
-    private static final int MSG_LAOD_DATA = 1;
-    private static List<NewsItem> pageOne = new ArrayList<>();
-    private static List<NewsItem> pageOneCache = new ArrayList<>();
-    private static List<BannerItem> bannerData = new ArrayList<>();
-    private static List<NewsItem> pageTwo = new ArrayList<>();
-    private static String[] imageurls = new String[]{"http://dl.bizhi.sogou.com/images/2012/09/30/44928.jpg", "http://pic1.desk.chinaz.com/file/10.03.10/5/rrgaos56.jpg", "http://www.deskcar.com/desktop/star/world/20081017165318/27.jpg"};
-    private Random mRandom=new Random();
-    private Handler mHandler = new Handler(Looper.getMainLooper()) {
+    public static final int MSG_LAOD_DATA = 1;
+    public static List<NewsItem> pageOne = new ArrayList<>();
+    public static List<NewsItem> pageOneCache = new ArrayList<>();
+    public static List<BannerItem> bannerData = new ArrayList<>();
+    public static List<NewsItem> pageTwo = new ArrayList<>();
+    public static String[] imageurls = new String[]{"http://dl.bizhi.sogou.com/images/2012/09/30/44928.jpg", "http://pic1.desk.chinaz.com/file/10.03.10/5/rrgaos56.jpg", "http://www.deskcar.com/desktop/star/world/20081017165318/27.jpg"};
+    public Random mRandom=new Random();
+    public Handler mHandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
